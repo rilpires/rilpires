@@ -10,9 +10,9 @@
     
     <div class="box headerpanel">
         <div>
-            <h1 class="title" style="flex-grow: 1;" >
+            <h1 style="flex-grow: 1;" class="title" >
                 <img src="/assets/images/joe.png">
-                <a href="/index.html" style="font-size: 100px;text-decoration: none;">@rilpires</a>
+                <a href="/index.html" class="bigasstitle" >@rilpires</a>
                 <img src="/assets/images/joe.png">
             </h1>
         </div>
@@ -23,6 +23,17 @@
     <div class ="mainpanel">
         
         <div class="sidepanel box">
+            
+            <div>
+                <img src="/assets/images/trainer.png" style="width:32px">
+                <img src="/assets/images/trainer.png" style="width:32px">
+                <span style="font-size: 24px;">Personal projects</span>
+                <img src="/assets/images/trainer.png" style="width:32px">
+                <img src="/assets/images/trainer.png" style="width:32px">
+            </div>
+
+            <br>
+
             <ul>
             {% for post in site.posts %}
                 <a href="{{post.url}}">

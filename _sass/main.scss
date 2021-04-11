@@ -17,6 +17,12 @@ $white_color : rgba(255, 255, 255 , 1);
 //    text-shadow: red -3px 2px , green 3px 2px , blue 0px -4px;
 }
 
+.bigasstitle {
+    text-align: center;
+    font-size: 100px;
+    text-decoration: none;
+}
+
 .smoll{
     font-size: 55%;
 }
@@ -36,6 +42,7 @@ $white_color : rgba(255, 255, 255 , 1);
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
+    text-align: center;
 }
 .mainpanel{
     display: flex;
