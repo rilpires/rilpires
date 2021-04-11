@@ -11,9 +11,9 @@
     <div class="box headerpanel">
         <div>
             <h1 class="title" style="flex-grow: 1;" >
-                <img src="{{site.url}}/assets/images/joe.png">
-                <a href="{{site.url}}/index.html" style="font-size: 100px;text-decoration: none;">@rilpires</a>
-                <img src="{{site.url}}/assets/images/joe.png">
+                <img src="{{site.baseurl}}/assets/images/joe.png">
+                <a href="{{site.baseurl}}/index.html" style="font-size: 100px;text-decoration: none;">@rilpires</a>
+                <img src="{{site.baseurl}}/assets/images/joe.png">
             </h1>
         </div>
         Contact me:
@@ -25,7 +25,7 @@
         <div class="sidepanel box">
             <ul>
             {% for post in site.posts %}
-                <a href="{{site.url}}/{{post.url}}">
+                <a href="{{site.baseurl}}/{{post.url}}">
                 <li style="font-size: x-large;" class="box" >
                     {{ post.title }}
                 </li>
