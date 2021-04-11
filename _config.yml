@@ -27,9 +27,6 @@ url: "https://rilpires.github.io" # the base hostname & protocol for your site, 
 twitter_username: rilpires
 github_username:  rilpires
 
-sass:
-    sass_dir: /rilpires
-
 # Build settings
 plugins:
   - jekyll-feed
