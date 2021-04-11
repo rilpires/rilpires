@@ -1,0 +1,53 @@
+$main_color:rgb(211, 64, 64);
+$main_shadow_color:rgb(211, 64, 64);
+$white_color : rgba(255, 255, 255 , 1);
+
+.box {
+    background-color: rgba(22, 22, 22, 0.712);
+    border: 1px solid $main_color ;
+    box-shadow: $main_shadow_color 5px 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.title {
+    text-align: center;
+    color: $white_color;
+    text-shadow: red -3px 2px , green 3px 2px , blue 0px -4px;
+}
+
+.smoll{
+    font-size: 55%;
+}
+.body{
+    background-image: url("/assets/images/dark_tile.png");
+    color:$white_color;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+.headerpanel{
+    display: block;
+    flex-direction: column;
+}
+.sidepanel{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+}
+.mainpanel{
+    display: flex;
+    flex-direction: row;
+}
+.postpanel{
+    flex-grow: 0;
+    flex-basis: 70%;
+    text-align: center;
+}
+
+
+/* all links */
+a {
+    color: $white_color;
+}

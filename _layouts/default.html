@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>{{ page.title }}</title>
+</head>
+<body class="body">
+    
+    <div class="box headerpanel">
+        <div>
+            <h1 class="title" style="flex-grow: 1;" >
+                <img src="assets/images/joe.png">
+                <a href="/index.html" style="font-size: 100px;text-decoration: none;">@rilpires</a>
+                <img src="assets/images/joe.png">
+            </h1>
+        </div>
+        Contact me:
+    </div>
+
+
+    <div class ="mainpanel">
+        
+        <div class="sidepanel box">
+            <ul>
+            {% for post in site.posts %}
+                <a href="{{ post.url }}">
+                <li style="font-size: x-large;" class="box" >
+                    {{ post.title }}
+                </li>
+                </a>
+            {% endfor %}
+            </ul>
+        </div>
+    
+        <div class="box postpanel" >
+            {{ content }}
+        </div>
+    
+    </div>
+
+</body>
+</html>

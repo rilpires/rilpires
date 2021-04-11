@@ -1,0 +1,6 @@
+---
+layout: post
+title: testando2
+---
+
+teste2

@@ -28,7 +28,7 @@ twitter_username: rilpires
 github_username:  rilpires
 
 # Build settings
-theme: jekyll-theme-midnight
+theme: minima
 plugins:
   - jekyll-feed
 
