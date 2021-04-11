@@ -21,7 +21,7 @@ $white_color : rgba(255, 255, 255 , 1);
     font-size: 55%;
 }
 .body{
-    background-image: url("/assets/images/dark_tile.png");
+    background-image: url("{{site.baseurl}}/assets/images/dark_tile.png");
     color:$white_color;
     display: flex;
     flex-direction: column;
