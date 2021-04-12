@@ -16,31 +16,44 @@
                 <img src="/assets/images/joe.png">
             </h1>
         </div>
-        Contact me:
+        
     </div>
 
+    <div class="box" style="width: 90%;">
+    Contact me:
+    <img src="/assets/images/emailicon.png" style="height: 24px; width: 24px; padding-left: 32px;"> rilpires@gmail.com
+    <img src="/assets/images/github.png" style="height: 24px; width: 24px; padding-left: 32px;"> <a href="https://github.com/rilpires">rilpires</a>
+    </div>
 
+    
     <div class ="mainpanel">
         
+        
+        
         <div class="sidepanel box">
-            
+
             <div>
-                <img src="/assets/images/trainer.png" style="width:32px">
-                <img src="/assets/images/trainer.png" style="width:32px">
-                <span style="font-size: 24px;">Personal projects</span>
-                <img src="/assets/images/trainer.png" style="width:32px">
-                <img src="/assets/images/trainer.png" style="width:32px">
+                <img src="/assets/images/trainer.png" style="width:48px">
+                <span style="font-size: 32px;">Personal projects</span>
+                <img src="/assets/images/trainer.png" style="width:48px">
             </div>
-
+            
             <br>
-
+            
             <ul>
             {% for post in site.posts %}
                 <a href="{{post.url}}">
-                <li style="font-size: x-large;" class="box" >
+                <li style="font-size: x-large; width: 90%;" class="box" >
                     {{ post.title }}
                 </li>
                 </a>
+            {% endfor %}
+            {% for i in (1..5) %}
+                <li class="box" style="width: 90% ; opacity: 50%;" >
+                    <img src="/assets/images/wip.gif" style="width: 20%;">
+                    !Coming soon!
+                    <img src="/assets/images/wip.gif" style="width: 20%;">
+                </li>
             {% endfor %}
             </ul>
         </div>

@@ -33,10 +33,12 @@ $white_color : rgba(255, 255, 255 , 1);
     flex-direction: column;
     font-size: larger;
     text-shadow: black -1px 1px , black 1px 1px , black 0px -1px , $main_color 3px 3px 2px;
+    align-items: center;
 }
 .headerpanel{
     display: block;
     flex-direction: column;
+    width: 50%;
 }
 .sidepanel{
     display: flex;
@@ -47,6 +49,7 @@ $white_color : rgba(255, 255, 255 , 1);
 .mainpanel{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .postpanel{
     flex-grow: 0;
