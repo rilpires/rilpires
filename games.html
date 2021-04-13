@@ -1,0 +1,47 @@
+---
+layout: default
+title: games
+boxsize: 250px
+---
+
+<h1 style="font-size: 72px;"> 
+    <img src="assets/images/bat.gif" style="width: 64px;">
+    VIDEOGAMES 
+    <img src="assets/images/bat.gif" style="width: 64px;">
+</h1>
+
+<p>
+    This section is dedicated to all games I developed or am currently developing. 
+</p>
+
+<p>
+    At the moment I'm still figuring out how I'll publish them. I don't want to create a entry in the side panel for all of them, while I want to publish current WIP posts about others.
+</p>
+
+<p>
+    {% for i in (1..8) %}
+        <img src="assets/images/wippikachu.gif" style="width:10%">
+    {% endfor %}
+</p>
+
+
+<div class="flextable">
+    {% for game in site.games %}
+    <a href="{{game.url}}">
+        <div class="box" style="width: {{page.boxsize}}; height: {{page.boxsize}}; display:flex; flex-direction:column; align-items:center; justify-content:space-between">
+            <h3>
+                {{game.title}}
+            </h3>
+            <img src="{{game.thumbnail}}" style="width: 90%;">
+        </div>
+    </a>
+    {% endfor %}
+
+    {% for i in (1..6) %}
+    <a href="">
+        <div class="box" style="width: {{page.boxsize}}; height: {{page.boxsize}};">
+
+        </div>
+    </a>
+    {% endfor %}
+</div>

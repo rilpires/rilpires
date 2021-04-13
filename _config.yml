@@ -20,17 +20,17 @@
 
 title: rilpires
 email: rilpires@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  My awesome description!!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rilpires.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: rilpires
-github_username:  rilpires
 
 # Build settings
 plugins:
   - jekyll-feed
 
+collections:
+  games:
+    layout: post
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

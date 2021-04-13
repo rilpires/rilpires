@@ -40,23 +40,39 @@ $white_color : rgba(255, 255, 255 , 1);
     flex-direction: column;
     width: 50%;
 }
-.sidepanel{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 20%;
-    text-align: center;
-}
-.mainpanel{
+#panelsparent{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 98%;
 }
-.postpanel{
-    flex-grow: 0;
-    flex-basis: 70%;
+#sidepanel{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
     text-align: center;
 }
+#postpanel{
+    text-align: center;
+    width: 70%;
+    font-size: 115%;
+}
+.flextable{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
 
+.box > p {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.box > ul {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 /* all links */
 a {
