@@ -5,9 +5,15 @@ boxsize: 250px
 ---
 
 <h1 style="font-size: 72px;"> 
+    <img src="assets/images/bat.gif" style="width: 8px;">
+    <img src="assets/images/bat.gif" style="width: 16px;">
+    <img src="assets/images/bat.gif" style="width: 32px;">
     <img src="assets/images/bat.gif" style="width: 64px;">
-    VIDEOGAMES 
+    Games 
     <img src="assets/images/bat.gif" style="width: 64px;">
+    <img src="assets/images/bat.gif" style="width: 32px;">
+    <img src="assets/images/bat.gif" style="width: 16px;">
+    <img src="assets/images/bat.gif" style="width: 8px;">
 </h1>
 
 <p>
@@ -16,15 +22,17 @@ boxsize: 250px
 
 <p>
     At the moment I'm still figuring out how I'll publish them. I don't want to create a entry in the side panel for all of them, while I want to publish current WIP posts about others.
+    For now, I'll keep publish them in no particular order.
 </p>
 
 
 <div class="flextable">
-    {% for game in site.games %}
+    {% assign sorted = site.games | sort : "date" %}
+    {% for game in sorted %}
     <a href="{{game.url}}">
         <div class="box" style="width: {{page.boxsize}}; height: {{page.boxsize}}; display:flex; flex-direction:column; align-items:center; justify-content:space-between">
             <h3>
-                {{game.title}}
+                {{game.title}} ({{game.date | date: "%Y"}})
             </h3>
             <img src="{{game.thumbnail}}" style="width: 90%;">
         </div>
