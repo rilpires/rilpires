@@ -2,15 +2,12 @@
 layout: default
 ---
 
-
-{% if page.tools %}
-<p class="smoll">
-    <a href="/games.html"><img src="/assets/images/backarrow.png" style="width: 32px; height: 32px;"></a>
-    <br>
-    Used tools: {{ page.tools }}
-</p>
-{% endif %}
-
-<h1 style="font-size: 72px;" >{{page.title}}</h1>
+<h1 style="font-size: 72px;" >
+    {{ page.title }}
+    
+    {% if layout.is_game %}
+    ({{ page.date | date: "%Y" }})
+    {% endif %}
+</h1>
 
 {{content}}
