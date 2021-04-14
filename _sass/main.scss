@@ -10,6 +10,13 @@ $white_color : rgba(255, 255, 255 , 1);
     margin: 10px;
     padding: 10px;
 }
+.imgbox {
+    background-color: rgba(22, 22, 22, 0.712);
+    border: 1px solid $main_color ;
+    box-shadow: $main_shadow_color 1px 1px;
+    margin: 5px;
+    padding: 5px;
+}
 
 
 .title {
@@ -53,6 +60,7 @@ $white_color : rgba(255, 255, 255 , 1);
     text-align: center;
 }
 #postpanel{
+    display: block;
     text-align: center;
     width: 70%;
     font-size: 115%;
@@ -64,14 +72,25 @@ $white_color : rgba(255, 255, 255 , 1);
     justify-content: space-evenly;
 }
 
-.box > p {
+#postpanel > p {
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
 }
-.box > ul {
+#postpanel > ul {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+// To proper scale pixeled images
+//https://stackoverflow.com/a/8639750/10508429
+.pixelated {
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
 }
 
 /* all links */
