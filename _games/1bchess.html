@@ -1,0 +1,56 @@
+---
+layout: gamepost
+title: 1b-chess
+thumbnail: /assets/images/1bchess/thumbnail.gif
+tools: <a href="/saucerengine">Saucer Engine</a>, C++, <a href="http://www.lua.org/about.html">Lua</a>, Aseprite
+date: 2021-02-01
+---
+
+<p>
+    1b-chess was meant to be called "one bit chess", it didn't because, when appended in the URL, the name didn't come out as good as I imagined... 
+</p>
+<p>
+    It is simply chess, in a retro-like style. There is only the option to play VS.AI, powered by the famous 
+    <a href="https://stockfishchess.org/blog/2020/stockfish-12/">Stockfish engine 12</a> (there is more recent versions of Stockfish now).
+</p>
+
+
+<br>
+<a href="https://rilpires.itch.io/1bchess"><img src="/assets/images/itchioicon.png" style="height:32px">Itch.io Page</a>
+<br>
+
+{% include image.html width="45%" src="/assets/images/1bchess/thumbnail.gif"       subtile="Good try horse" %}
+{% include image.html width="45%" src="/assets/images/1bchess/physics.gif"       subtile="Of course I had to test the Box2D physics I integrated into the engine" %}
+{% include image.html width="45%" src="/assets/images/1bchess/0.png"       subtile="Kind messages shown on intro" %}
+{% include image.html width="45%" src="/assets/images/1bchess/1.png"       subtile="Simplistic menu" %}
+
+
+<h1>Development</h1>
+<p>
+    The game itself was made in <a href="/saucerengine">Saucer Engine</a>, an engine I made myself, aiming to both (1) complete this game and 
+    (2) have a general-purpose engine that could create 2D games. My objective was that I could create this game without touching the core
+    C++ code, using only Lua. It wasn't possible because I needed a proper external <a href="https://github.com/rilpires/saucer_chess">chess module</a> 
+    for the engine that could do proper inter-process communication with the stockfish 
+    (or any <a href="https://www.chessprogramming.org/UCI">UCI-supported</a>) executable REPL (The module is not part of the engine).
+    Another <i>subproduct</i> of it was this <a href="https://github.com/rilpires/chess_fen_validator">FEN-validator</a>, a header-only library for 
+    C++ that I made in order to implement proper validation of the chess rules, including draw reasons.
+</p>
+<p>
+    Since the game was very small, I had not much issues with scripting it in Lua, although I didn't like it's syntax very much and the fact that "arrays" starts at 1.
+</p>
+
+{% include image.html width="65%" src="/assets/images/1bchess/lua.png" subtile="Example of it's lua source code" %}
+
+<h2>Assets</h2>
+{% include image.html width="45%" src="/assets/images/1bchess/2.png"  subtile="e2e4 a7a6" %}
+<p>
+    I made every asset myself. Very liked the outcome of this pixel art version of chess pieces.
+    <span class="smoll">I'm proud of myself ok</span>.
+</p>
+
+<h3>About real chess</h3>
+<p>
+    As I said in another post, I thought that I would have felt motivated to play chess when it comes to completion. I have never played a single 
+    game of chess before it. Well... the motivation didn't come. Chess is hard! I couldn't have beat the A.I. at the lowest level! Maybe another days.
+    I checked on some chess content for a while and enjoyed it tho.
+</p>
