@@ -20,11 +20,19 @@ permalink: /saucerengine
 </p>
 
 <p>
-    The plan was to make a *"simple retro-like Chess game"* (motivated by the popular Netflix show with the pretty girl you know about). But I also always had wanted to learn low-level graphics stuff with C++... so it was settled: I would create this chess game with a game engine I made myself.
+    The plan was to make a <i>"simple retro-like Chess game"</i> (motivated by the popular Netflix show with the pretty girl you know about). 
+    But I also always had wanted to learn low-level graphics stuff with C++... so it was settled: 
+    I would create this chess game with a game engine I made myself.
 </p>
 
 <p>
-    Fast forward: I made it!!! <a href="https://rilpires.itch.io/1bchess">Here is the page on itch.io</a>. Even though my first expectations was to complete everything in 1 month (naive old me!!!), now I don't think 2 months was too much. Important note: My objective wasn't to complete only the *"simple retro-like Chess game"*. This was postponed until the engine was "complete", and this one was the task that took 95% of the time. I was a little further than my first concepts of what was a "complete" engine, and still, even then now I see that it is not complete.
+    Fast forward: I made it!!! <a style="font-size: 125%;" href="/games/1bchess">Here is the post I wrote about it</a>. 
+</p>
+
+<p>
+    Even though my first expectations was to complete everything in 1 month (naive old me!!!), now I don't think 2 months was too much. 
+    My objective wasn't to complete only the <a href="/games/1bchess"><i>simple retro-like Chess game</i></a>. This was postponed until the engine was <i>complete</i>, and this one was the task that took 95% of the time. 
+    It was a little further than my first concepts of what was a <i>complete</i> engine, and still, even then I see that it is not quite complete yet.
 </p>
 
 <p>
@@ -69,7 +77,11 @@ permalink: /saucerengine
 </p>
 
 <p>
-    Sorry mom. It was already too much of unpaid work to I even think about documentating it for other users. Tried Doxygen but ehh... I decided I should expose the Lua API instead the C++. That's why I'm saying the engine is "complete", with the quotation mark.
+    Sorry mom. It was already too much of unpaid work to I even think about documentating it for other users. Tried Doxygen but ehh... I decided I should expose the Lua API instead the C++. That's why I'm saying the engine is not quite <i>complete</i> yet.
+</p>
+<p>
+    The most important thing I have to say is that you should run it with a debug environment (like GDB). There is too many ways the engine can crash that I 
+    haven't made a proper runtime guard yet.
 </p>
 
 <br>
@@ -97,20 +109,22 @@ permalink: /saucerengine
 
 <h1 class="title">Conclusions</h1>
 <ul style="text-align:left">
-    <li>
+    <li style="margin-bottom: 10px;">
         C++ is just the right amount of hard and unlimited amount of power.
-    </li><li>
+    </li><li style="margin-bottom: 10px;">
         You can do bollocks and C++ will still be faster than other solutions.
-    </li><li>
+    </li><li style="margin-bottom: 10px;">
+        Spend some reasonably time on a proper building & debugging environment. These aren't things you can show off but are crucial.
+    </li><li style="margin-bottom: 10px;">
         Making games with C++ is a totally different task from making a general-purpose game engine.
-    </li><li>
+    </li><li style="margin-bottom: 10px;">
         Embedding Lua was way easier than expected. I just don't like it's syntax!! But it still is a very useful tool.
-    </li><li>
-        You gotta be prepared to learn things you were not expecting to, like, in my case, the bare minimum of audio programming. It isn't just "play me this file please" you know... still, kinda satisfying knowledge.
-    </li><li>
+    </li><li style="margin-bottom: 10px;">
+        I wasn't expecting to learn things like the bare minimum of audio programming (it isn't just "play me this file please" you know... still, kinda satisfying knowledge)
+    </li><li style="margin-bottom: 10px;">
         Even though there isn't any documentation, I'm pretty happy with how things came together at the end. The assets packaging, the last feature I made, was surprisingly satisfying. It isn't in any way hack-proof, but I convinced myself that barely no game out there is?
-    </li><li>
-        In the end, I wasn't any motivated to play a single game of Chess (!!!). More on that in another post maybe.
+    </li><li style="margin-bottom: 10px;">
+        In the end, I wasn't any motivated to play a single game of Chess (!!!). I wrote about it <a href="/games/1bchess">here</a>.
     </li>
 </ul>
 
